@@ -34,5 +34,5 @@ Example:
 
 To gather information about example.com and save it to output.txt:
 
-python3 script.py -d example.com -f output.txt
+python3 webinfo.py -d example.com -f output.txt
 
