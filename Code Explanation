@@ -1,0 +1,53 @@
+Code Explanation
+
+1. Argument Parsing
+The script begins by using argparse to handle command-line arguments, ensuring that the user provides a domain name.
+
+2. WHOIS Lookup
+Using the whois library, the script fetches and prints:
+
+Domain Name
+Registrar
+Creation and Expiration Dates
+Registrant information
+Error handling is included to catch and report any issues during the lookup.
+
+3. DNS Records Retrieval
+The script utilizes dns.resolver to query:
+
+A Records (IP addresses)
+NS Records (Name servers)
+MX Records (Mail servers)
+TXT Records (Text records)
+It collects and displays these records, again incorporating error handling for robust performance.
+
+4. Geolocation Information
+Using the requests library, the script makes a call to a geolocation API based on the domain's resolved IP address to retrieve:
+
+Country
+City
+State
+Latitude
+Longitude
+Error handling ensures that any issues with the network request are reported.
+
+5. Shodan Search
+If an IP address is provided, the script uses the shodan library to query Shodan for:
+
+IP Address
+Organization
+Country
+Available data about services running on that IP
+An API key is required for Shodan access.
+
+6. Output to File
+If the user specifies an output file, the script saves all gathered information in a well-structured format for easy reading.
+
+Security Notice
+
+Please do not hardcode sensitive information like API keys in production code. Consider using environment variables or secure storage solutions.
+
+Contributions
+
+Contributions are welcome! Please feel free to submit a pull request or report issues.
+
