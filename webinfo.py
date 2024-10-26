@@ -85,6 +85,9 @@ if ip:
 
 # Output to file
 #For getting Output file Use -f <file name u want to save>
+#python3 webinfo.py -d DOMAIN [-s IP] [-f OUTPUT]
+
+
 if output:
     with open(output, 'w') as file:
         file.write(whois_result + '\n\n')
