@@ -17,3 +17,22 @@ Requirements
 Python 3.x
 
 Required libraries: whois, argparse ,socket ,dns.resolver ,requests, shodan
+
+Usage
+
+Run the script from the command line as follows:
+
+python3 webinfo.py -d DOMAIN [-s IP] [-f OUTPUT]
+
+Parameters:
+
+-d, --domain: (Required) The domain name you want to gather information about.
+-s, --shodan: (Optional) The IP address for which you want to perform a Shodan search.
+-f, --output: (Optional) The file path where you want to save the output.
+
+Example:
+
+To gather information about example.com and save it to output.txt:
+
+python3 script.py -d example.com -f output.txt
+
