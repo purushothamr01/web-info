@@ -15,10 +15,5 @@ Output to File: Saves the gathered information to a specified output file.
 Requirements
 
 Python 3.x
-Required libraries:
-whois
-argparse
-socket
-dns.resolver
-requests
-shodan
+
+Required libraries: whois, argparse ,socket ,dns.resolver ,requests, shodan
