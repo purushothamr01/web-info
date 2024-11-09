@@ -36,3 +36,5 @@ To gather information about example.com and save it to output.txt:
 
 python3 webinfo.py -d example.com -f output.txt
 
+Blog link
+https://medium.com/@Purushothamr/how-i-combined-whois-dns-and-shodan-in-one-powerful-python-script-b1031962e262
