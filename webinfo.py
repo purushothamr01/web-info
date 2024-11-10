@@ -1,4 +1,4 @@
-import whois
+loimport whois
 import argparse
 import socket
 import dns.resolver
