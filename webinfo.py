@@ -6,8 +6,7 @@ import requests
 import shodan
 
 # Set up argument parser
-parser = argparse.ArgumentParser(description="This is the basic information tool.",
-                                 usage="python3 pytest.py -d DOMAIN [-s IP] [-f OUTPUT]")
+parser = argparse.ArgumentParser(description="This is the basic information tool.", usage="python3 pytest.py -d DOMAIN [-s IP] [-f OUTPUT]")
 parser.add_argument("-d", "--domain", help="Enter the domain name for foot printing.", required=True)
 parser.add_argument("-s", "--shodan", help="Enter the IP for Shodan search.")
 parser.add_argument("-f", "--output", help="Enter the file to save or write output to.")
